@@ -1,0 +1,15 @@
+C:\Users\Aleksandr\Version control 1\New_1\bin\Debug\net6.0\New_1.exe
+C:\Users\Aleksandr\Version control 1\New_1\bin\Debug\net6.0\New_1.deps.json
+C:\Users\Aleksandr\Version control 1\New_1\bin\Debug\net6.0\New_1.runtimeconfig.json
+C:\Users\Aleksandr\Version control 1\New_1\bin\Debug\net6.0\New_1.dll
+C:\Users\Aleksandr\Version control 1\New_1\bin\Debug\net6.0\New_1.pdb
+C:\Users\Aleksandr\Version control 1\New_1\obj\Debug\net6.0\New_1.csproj.AssemblyReference.cache
+C:\Users\Aleksandr\Version control 1\New_1\obj\Debug\net6.0\New_1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aleksandr\Version control 1\New_1\obj\Debug\net6.0\New_1.AssemblyInfoInputs.cache
+C:\Users\Aleksandr\Version control 1\New_1\obj\Debug\net6.0\New_1.AssemblyInfo.cs
+C:\Users\Aleksandr\Version control 1\New_1\obj\Debug\net6.0\New_1.csproj.CoreCompileInputs.cache
+C:\Users\Aleksandr\Version control 1\New_1\obj\Debug\net6.0\New_1.dll
+C:\Users\Aleksandr\Version control 1\New_1\obj\Debug\net6.0\refint\New_1.dll
+C:\Users\Aleksandr\Version control 1\New_1\obj\Debug\net6.0\New_1.pdb
+C:\Users\Aleksandr\Version control 1\New_1\obj\Debug\net6.0\New_1.genruntimeconfig.cache
+C:\Users\Aleksandr\Version control 1\New_1\obj\Debug\net6.0\ref\New_1.dll
