@@ -27,3 +27,12 @@
 #     l.append(i**2+2*i+1)
 # print()
 # print(*l, sep='\n')
+
+
+line = []
+for i in range(int(input())):
+    i = int(input())
+    line.append(i)
+line.remove(max(line))
+line.remove(min(line))
+print(*line, sep='\n')
