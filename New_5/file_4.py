@@ -72,7 +72,27 @@
 
 
 
+# s = [input() for _ in range(int(input()))]
+# ls = input() 
+# # print(*[s[i] for i in range(len(s)) if s[i].lower().find(ls.lower()) != -1], sep="\n")
+# print(*[i for i in s if ls.lower() in i.lower()], sep="\n")
+
+
+
 s = [input() for _ in range(int(input()))]
-ls = input() 
-# print(*[s[i] for i in range(len(s)) if s[i].lower().find(ls.lower()) != -1], sep="\n")
-print(*[i for i in s if ls.lower() in i.lower()], sep="\n")
+k = [input() for _ in range(int(input()))]
+counter = 0
+for i in s:
+    for j in k:
+        counter = 0
+        if j.lower() in i.lower():
+            counter += 1
+            if counter >= len(k):
+                print(i, sep='\n')
+
+
+
+# s = [[input() for _ in range(int(input()))] for _ in '01']
+# print(* [i for i in s[0] if all(j.lower() in i.lower() for j in s[1])], sep='\n')
+
+
