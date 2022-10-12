@@ -79,20 +79,45 @@
 
 
 
-s = [input() for _ in range(int(input()))]
-k = [input() for _ in range(int(input()))]
-counter = 0
-for i in s:
-    for j in k:
-        counter = 0
-        if j.lower() in i.lower():
-            counter += 1
-            if counter >= len(k):
-                print(i, sep='\n')
+# s = [input() for _ in range(int(input()))]
+# k = [input() for _ in range(int(input()))]
+# counter = 0
+# for i in s:
+#     for j in k:
+#         counter = 0
+#         if j.lower() in i.lower():
+#             counter += 1
+#             if counter >= len(k):
+#                 print(i, sep='\n')
 
 
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 # s = [[input() for _ in range(int(input()))] for _ in '01']
 # print(* [i for i in s[0] if all(j.lower() in i.lower() for j in s[1])], sep='\n')
 
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+
+
+# ls = [input() for _ in range(int(input()))]
+
+
+# ls = [-7, 0, -19, 3, 0, 1, -32]
+# print(*(sorted(ls)), sep='\n')
+
+# ______________________________________
+
+x = [int(input()) for _ in range(int(input()))]
+print(*[i for i in x if i < 0], *[i for i in x if i == 0], *[i for i in x if i > 0], sep = '\n')
+
+
+print(*sorted([int(input()) for _ in range(int(input()))], key = lambda x: abs(x) / x if x != 0 else 0), sep='\n')
+
+
+lst = [int(input()) for i in range(int(input()))]
+[print(i) for i in lst if i < 0]
+[print(i) for i in lst if i == 0]
+[print(i) for i in lst if i > 0]
+
+# _____________________________________
