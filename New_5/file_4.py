@@ -108,16 +108,21 @@
 
 # ______________________________________
 
-x = [int(input()) for _ in range(int(input()))]
-print(*[i for i in x if i < 0], *[i for i in x if i == 0], *[i for i in x if i > 0], sep = '\n')
+# x = [int(input()) for _ in range(int(input()))]
+# print(*[i for i in x if i < 0], *[i for i in x if i == 0], *[i for i in x if i > 0], sep = '\n')
 
 
-print(*sorted([int(input()) for _ in range(int(input()))], key = lambda x: abs(x) / x if x != 0 else 0), sep='\n')
 
+# print(*sorted([int(input()) for _ in range(int(input()))], key = lambda x: abs(x) / x if x != 0 else 0), sep='\n')
 
-lst = [int(input()) for i in range(int(input()))]
-[print(i) for i in lst if i < 0]
-[print(i) for i in lst if i == 0]
-[print(i) for i in lst if i > 0]
+# lst = [int(input()) for i in range(int(input()))]
+# [print(i) for i in lst if i < 0]
+# [print(i) for i in lst if i == 0]
+# [print(i) for i in lst if i > 0]
 
 # _____________________________________
+s = 'У\лукоморья\дуб\зеленый\златая\цепь\на\дубе\том'
+print(*s.split('\\'), sep='\n')
+
+# -----------
+
