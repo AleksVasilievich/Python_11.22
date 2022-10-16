@@ -100,12 +100,12 @@
 # print(*[s[k] for s in strings if k < len(s)], sep='')       
 
 
-# line = [input() for i in range(int(input()))]
-# print(line)
-
-n = int(input())
-line = []
-for i in range(n):
-    s = input()
-    line.extend(s)
+line = [input() for i in range(int(input()))]
 print(line)
+
+# n = int(input())
+# line = []
+# for i in range(n):
+#     s = input()
+#     line.extend(s)
+# print(line)
