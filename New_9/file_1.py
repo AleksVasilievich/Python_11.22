@@ -13,8 +13,12 @@
 
 # ______________________________________________________
 
-def f(x):
-    return x * x
+# def f(x):
+#     return x * x
 
-ls1 = [1, 2, 3, 5, 8, 15, 23, 38]
-print(*[(i, f(i)) for i in ls1 if i % 2 == 0])
+# ls1 = [1, 2, 3, 5, 8, 15, 23, 38]
+# print(*[(i, f(i)) for i in ls1 if i % 2 == 0])
+
+
+data = list(map(int, '1,2,3,456,56'.split(',')))
+print(data)
