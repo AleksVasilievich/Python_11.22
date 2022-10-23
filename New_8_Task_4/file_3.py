@@ -3,20 +3,10 @@
 
 # 3 1 2 3      2 1
 
-s = ''.join(input().split())
+s = ' '.join(input('Введите числа через пробел ->  ').split())
 for i in range(len(s)):
     if s.count(s[i]) == 1:
-        print(s[i], end='')
-
-
-
-
-
-
-
-
-
-
+        print(s[i], end=' ')
 
 
 

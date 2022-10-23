@@ -8,11 +8,14 @@
 
 from random import randint
 
-k = int(input('Введите натуральную степень многочлена -> '))
-ls = []
-for i in range(k):
-    ls.append('x ** k')
-    k -= 1
-print(ls)
-
-
+for i in range(int(input('Введите натуральную степень многочлена -> ')), 0, -1):
+    nam = randint(1, 101)
+    if nam == 1:
+        nam = ''
+    else:
+        if i != 1:
+            nam = f'{nam}*x**{i} +'
+        else:
+            nam = f'{nam}*x +'
+    print(nam, end=' ')
+print(f'{randint(1, 101)} = 0')
