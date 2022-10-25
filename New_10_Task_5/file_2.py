@@ -8,6 +8,17 @@
 # if i % 2 == 1:
 # print("2 игрок")
 
-from random import randint
+# n = input()
+# if n.isalnum():
+#     ls = ''.join(n)
+# print(ls)
 
-print(randint(1, 2))
+
+# ls = input()
+# while ls.endswith('.com'):
+#     print('YES')
+# else:
+#     print('No')
+    
+print('YES' if input().endswith(('.com','.ru')) else 'NO')
+    
