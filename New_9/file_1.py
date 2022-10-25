@@ -20,5 +20,8 @@
 # print(*[(i, f(i)) for i in ls1 if i % 2 == 0])
 
 
-data = list(map(int, '1,2,3,456,56'.split(',')))
-print(data)
+# data = list(map(int, '1,2,3,456,56'.split(',')))
+# print(data)
+
+
+print('YES' if input().endswith(('.com','.ru')) else 'NO')

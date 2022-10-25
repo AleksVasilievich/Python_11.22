@@ -8,17 +8,9 @@
 # if i % 2 == 1:
 # print("2 игрок")
 
-# n = input()
-# if n.isalnum():
-#     ls = ''.join(n)
-# print(ls)
 
+line = [['1 ', '2 ', '3 '], ['4 ', '5 ', '6 '], ['7 ', '8 ', '9 ']]
 
-# ls = input()
-# while ls.endswith('.com'):
-#     print('YES')
-# else:
-#     print('No')
-    
-print('YES' if input().endswith(('.com','.ru')) else 'NO')
-    
+line[0][0] = '0 '
+for i in line:
+    print(*i)
