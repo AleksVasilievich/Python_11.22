@@ -15,6 +15,7 @@ for i in line:
 
 pl_1 = '0'
 pl_2 = 'x'
+count = 0
 for n in range(9):
     if n % 2 == 0:
         print("1 игрок")
@@ -37,8 +38,9 @@ for n in range(9):
 
         if line[0][0] == line[0][1] == line[0][2] or line[1][0] == line[1][1] == line[1][2] or line[2][0] == line[2][1] == line[2][2]\
                 or line[0][0] == line[1][0] == line[2][0] or line[0][1] == line[1][2] == line[2][1] or line[0][2] == line[1][2] == line[2][2]\
-                    or line[0][0] == line[1][2] == line[2][2] or line[0][2] == line[1][2] == line[2][0]:
+                or line[0][0] == line[1][1] == line[2][2] or line[0][2] == line[1][1] == line[2][0]:
             print('Выиграл 1 игрок !')
+            count += 1
             break
 
     if n % 2 == 1:
@@ -62,7 +64,10 @@ for n in range(9):
 
         if line[0][0] == line[0][1] == line[0][2] or line[1][0] == line[1][1] == line[1][2] or line[2][0] == line[2][1] == line[2][2]\
                 or line[0][0] == line[1][0] == line[2][0] or line[0][1] == line[1][2] == line[2][1] or line[0][2] == line[1][2] == line[2][2]\
-                    or line[0][0] == line[1][2] == line[2][2] or line[0][2] == line[1][2] == line[2][0]:
+                    or line[0][0] == line[1][1] == line[2][2] or line[0][2] == line[1][1] == line[2][0]:
             print('Выиграл 2 игрок !')
+            count += 1
             break
-print('Ничья !')
+    if n == 8 and count == 0:
+        print('Ничья !')
+        
