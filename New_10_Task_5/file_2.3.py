@@ -21,8 +21,9 @@ for n in range(9):
         print("1 игрок")
         pl = pl_1
 
-        m = input('Введите номер ячейки -> ')
-
+        m = ''.join(filter(lambda x: x.isdigit(), input('Введите номер ячейки -> ')))
+        while m == '' or int(m) < 1 or int(m) > 9:
+            m = ''.join(filter(lambda x: x.isdigit(), input('Введите номер ячейки -> ')))
         k_v = 0
         k_s = 0
         for i in line:
@@ -47,8 +48,9 @@ for n in range(9):
         print("2 игрок")
         pl = pl_2
 
-        m = input('Введите номер ячейки -> ')
-
+        m = ''.join(filter(lambda x: x.isdigit(), input('Введите номер ячейки -> ')))
+        while m == '' or int(m) < 1 or int(m) > 9:
+            m = ''.join(filter(lambda x: x.isdigit(), input('Введите номер ячейки -> ')))
         k_v = 0
         k_s = 0
         for i in line:
