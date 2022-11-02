@@ -83,3 +83,18 @@
 # print(nambers)
 
 
+ls = input().split()
+l = []
+for i in range(len(ls)):
+    l.append(int(ls[i]))
+
+a = max(l)
+b = min(l)
+for j in l:
+    if j == a:
+        j = b
+        print(j, end=' ')
+        continue
+    if j == b:
+        j = a
+    print(j, end=' ')
