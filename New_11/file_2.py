@@ -37,8 +37,26 @@
 # chars = [c for c in 'abcdefg']
 # print(chars)
 #--------------------------------------------------------------------
-palindromes = [i for i in range(100, 1000) if str(i)[0] == str(i)[2]]
-# palindromes = [i for i in range(100, 1000) if i % 10 == i // 100]\
-print(palindromes)      # Полиндром!
+# palindromes = [i for i in range(100, 1000) if str(i)[0] == str(i)[2]]
+# # palindromes = [i for i in range(100, 1000) if i % 10 == i // 100]\
+# print(palindromes)      # Полиндром!
 #------------------------------------------------------------------------
+##################
+# print(*[i ** 2 for i in range(1, int(input()) + 1)], sep='\n')
+# # ------
+# [print(_**2) for _ in range(1, int(input())+1)]
+# # ------
+# for j in [i**2 for i in range(1, int(input())+1)]: print(j)
+# # ------\\\ ///
+# ls = [i ** 2 for i in range(1, int(input()) + 1)]
+# for j in ls:
+#     print(j)
+####################
+
+
+# print(pow(3, 3))
+
+# print(*[ pow(int(i), 3) for i in input().split()])
+
+# print(*[i for i in input().split()], sep='\n')
 
