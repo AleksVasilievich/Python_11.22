@@ -2,49 +2,56 @@
 # Пример ->   2+2 => 4
 # * Добавьте вожможность использования скобок.
 
-data1 = '2+3*2+8/2-2'
-data = []
-for j in data1:
-    if j.isdigit():
-        data.append(int(j))
-    else:
-        data.append(j)
-print(data)
 
-result = 0
-
-while '*' in data:
-    index = data.index('*')
-    result = data[index - 1] * data[index + 1]
-    data = data[:index - 1] + data[index + 2:]
-    data.insert(index - 1, result)
-    print(result)
-    break
-print(data)
+def line(st):
+    data1 = []
+    a = ''
+    for j in st:
+        if j.isdigit():
+            a += j
+        else:
+            data1.append(float(a))
+            data1.append(j)
+            a = ''
+    data1.append(float(a))    
+    return data1
 
 
+def calaulate(data):
+    result = 0
+    while len(data) != 1:
 
+        while '*' in data:
+            index = data.index('*')
+            result = data[index - 1] * data[index + 1]
+            data = data[:index - 1] + data[index + 2:]
+            data.insert(index - 1, result)
+            break
 
+        while '/' in data:
+            index = data.index('/')
+            result = data[index - 1] / data[index + 1]
+            data = data[:index - 1] + data[index + 2:]
+            data.insert(index - 1, result)
+            break
 
+        while '+' in data:
+            index = data.index('+')
+            result = data[index - 1] + data[index + 1]
+            data = data[:index - 1] + data[index + 2:]
+            data.insert(index - 1, result)
+            break
 
-# for i in data:
-#     while i == '*':
-#         # ls = float(data[data.index('*') - 1]) * float(data[data.index('*') + 1])
-#         data = data[:data.index('*') - 1] + str(float(data[data.index('*') - 1]) * float(data[data.index('*') + 1])) + data[data.index('*') + 2:]
-#         print(data)
-#         break
-# for i in data:    
-#     while i == '/':
-#         data = data[:data.index('/') - 1] + str(float(data[data.index('/') - 1]) / float(data[data.index('/') + 1])) + data[data.index('/') + 2:]
-#         print(data)
-#         break
-# for i in data:    
-#     while i == '+':
-#         data = data[:data.index('+') - 1] + str(float(data[data.index('+') - 1]) + float(data[data.index('+') + 1])) + data[data.index('+') + 2:]
-#         print(data)
-#         break
-# for i in data:    
-#     while i == '-':
-#         data = data[:data.index('-') - 1] + str(float(data[data.index('-') - 1]) / float(data[data.index('-') + 1])) + data[data.index('-') + 2:]
-#         print(data)
-#         break
+        while '-' in data:
+            index = data.index('-')
+            result = data[index - 1] - data[index + 1]
+            data = data[:index - 1] + data[index + 2:]
+            data.insert(index - 1, result)
+            break
+    return data
+
+st = '21+3*2+8/2-7'
+line(st)
+calaulate(data1)
+# print(*data1)
+# print(calaulate(data1))
