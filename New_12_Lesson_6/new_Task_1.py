@@ -4,17 +4,18 @@
 
 
 def line(st):
-    data1 = []
-    a = ''
+    result_1 = []
+    simbol = ''
     for j in st:
         if j.isdigit():
-            a += j
+            simbol += j
         else:
-            data1.append(float(a))
-            data1.append(j)
-            a = ''
-    data1.append(float(a))    
-    return data1
+            result_1.append(float(simbol))
+            result_1.append(j)
+            simbol = ''
+    result_1.append(float(simbol))    
+    return result_1
+    # print(result_1)
 
 
 def calaulate(data):
@@ -24,34 +25,28 @@ def calaulate(data):
         while '*' in data:
             index = data.index('*')
             result = data[index - 1] * data[index + 1]
-            data = data[:index - 1] + data[index + 2:]
-            data.insert(index - 1, result)
-            break
+            data = data[:index - 1] + [result] + data[index + 2:]
+            # data.insert(index - 1, result)  => вместо [result]
+
 
         while '/' in data:
             index = data.index('/')
             result = data[index - 1] / data[index + 1]
-            data = data[:index - 1] + data[index + 2:]
-            data.insert(index - 1, result)
-            break
+            data = data[:index - 1] + [result] + data[index + 2:]
 
         while '+' in data:
             index = data.index('+')
             result = data[index - 1] + data[index + 1]
-            data = data[:index - 1] + data[index + 2:]
-            data.insert(index - 1, result)
-            break
+            data = data[:index - 1] + [result] + data[index + 2:]
 
         while '-' in data:
             index = data.index('-')
             result = data[index - 1] - data[index + 1]
-            data = data[:index - 1] + data[index + 2:]
-            data.insert(index - 1, result)
-            break
-    return data
+            data = data[:index - 1] + [result] + data[index + 2:]
+    return result
 
-st = '21+3*2+8/2-7'
-line(st)
-calaulate(data1)
-# print(*data1)
-# print(calaulate(data1))
+stroka = '21+3*2+8/2-7'
+print(line(stroka))
+
+res = line(stroka)
+print(calaulate(res))
