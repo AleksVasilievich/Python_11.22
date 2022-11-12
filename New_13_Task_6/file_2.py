@@ -2,7 +2,7 @@
 #  [12,'sadf',5643] ---> ['sadf'] ,[12,5643]
 
 ls = [12,'sadf',5643]
-print(list(filter(lambda i: type(i) == str, ls)), list(filter(lambda i: type(i) != str, ls)))
+print(list(filter(lambda i: type(i) == str, ls)), ',', list(filter(lambda i: type(i) != str, ls)))
 
 # def filters(ls):
 #     res_str = []
